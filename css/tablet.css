@@ -1,0 +1,63 @@
+@media (min-width: 768px) and (max-width: 1157px) {
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+
+    .address {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .features {
+        flex-wrap: wrap;
+    }
+
+    .features li {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .team-list {
+        flex-wrap: wrap;
+        gap: 64px 24px;
+    }
+
+    .team-card {
+        width: calc((100% - 24px) / 2);
+    }
+
+
+
+    .portfolio-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 72px 24px;
+    }
+
+    .portfolio-list {
+        width: 100%;
+    }
+
+
+    .hero {
+        padding: 112px 0;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+
+
+    .footer>.container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+
+}
