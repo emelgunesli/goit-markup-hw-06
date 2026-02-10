@@ -814,6 +814,12 @@ footer p {
     height: 24px;
 
   }
+  .header-1{
+    padding-bottom: 17.5px;
+    padding-top: 17.5px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
 
   .team-list {
@@ -821,11 +827,13 @@ footer p {
     gap: 72px;
 
   }
+ 
 
   .team-card img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    
   }
 
 
@@ -860,6 +868,10 @@ footer p {
   .portfolio-list {
     flex-direction: column;
     gap: 72px;
+  }
+  .portfolio-card{
+    width: 288px;
+    height: 400px;
   }
 
 
@@ -943,8 +955,73 @@ footer p {
   }
 }
 
+/*TABLET GÖRÜNÜM*/
+@media (min-width: 768px) and (max-width: 1157px) {
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .container {
+    max-width: 768px;
+  }
+
+  .address {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .features {
+    flex-wrap: wrap;
+  }
+  .features-icon{
+    display: none;
+  }
+
+  .features li {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .team-list {
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+
+  .team-card {
+    width: calc((100% - 24px) / 2);
+  }
 
 
 
+  .portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 72px 24px;
+  }
+
+  .portfolio-list {
+    width: 100%;
+  }
+
+
+  .hero {
+    padding: 112px 0;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+.footer-text-logo{
+  padding-right: 24px;
+}
+
+
+  .footer>.container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
 
 
